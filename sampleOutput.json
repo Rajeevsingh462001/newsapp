@@ -1,0 +1,395 @@
+{
+  "status": "ok",
+  "totalResults": 4,
+  "articles": [
+    {
+      "source": { "id": "bbc-sport", "name": "BBC Sport" },
+      "author": "BBC Sport",
+      "title": "Australia v Sri Lanka - Cricket - BBC Sport",
+      "description": "Find out the in depth batting and bowling figures for Australia v Sri Lanka in the International Twenty20 Match on BBC Sport.",
+      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/ECKO51153",
+      "urlToImage": "https:////m.files.bbci.co.uk/modules/bbc-morph-sport-seo-meta/1.22.0/images/bbc-sport-logo.png",
+      "publishedAt": "2022-02-13T08:22:22.4598599Z",
+      "content": "<table><tr><th>Batter</th><th>How Out</th><th>Bowler</th><th>Runs</th><th>Balls</th><th>4s</th><th>6s</th><th>Mins</th><th>SR</th></tr>\r\n<tr><th>Total</th><th>(2.1 overs)</th><th>16-for0wickets</th><… [+1257 chars]"
+    },
+    {
+      "source": { "id": "abc-news-au", "name": "ABC News (AU)" },
+      "author": "ABC News",
+      "title": "Will Pucovski resting after suffering concussion during Victoria's Sheffield Shield match against South Australia",
+      "description": "Cricket Victoria responds to calls for Will Pucovski to retire to protect his long-term health, after he suffered the 11th concussion of his frequently interrupted career.",
+      "url": "http://www.abc.net.au/news/2022-02-13/cricket-victoria-will-pucovski-concussion-management/100826842",
+      "urlToImage": "https://live-production.wcms.abc-cdn.net.au/1354b5f6f1650d206bfbaa40345051a3?impolicy=wcms_crop_resize&cropH=1138&cropW=2023&xPos=0&yPos=161&width=862&height=485",
+      "publishedAt": "2022-02-13T07:34:18Z",
+      "content": "Will Pucovski has returned to Melbourne following another concussion, as Cricket Victoria calls for calm on speculation over the talented batter's future.\r\n<ul><li>Pucovski was concussed during a Vic… [+2459 chars]"
+    },
+    {
+      "source": { "id": "espn-cric-info", "name": "ESPN Cric Info" },
+      "author": null,
+      "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
+      "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
+      "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
+      "publishedAt": "2020-04-27T11:41:47Z",
+      "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
+    },
+    {
+      "source": { "id": "espn-cric-info", "name": "ESPN Cric Info" },
+      "author": null,
+      "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
+      "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
+      "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
+      "publishedAt": "2020-03-30T15:26:05Z",
+      "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
+    }
+  ]
+}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous">
+    <title>NewsMonkey -Get daily does of news for free!</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+  crossorigin="anonymous"></script>
+  
+</html>
+
+
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+
+export class Navbar extends Component {
+
+  render() {
+    return (
+      <div>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container-fluid">
+    <Link className="navbar-brand" to="/">NewsMonkey</Link>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+        </li>
+        {/* <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li> */}
+        <li className="nav-item"><Link className="nav-link" to="/business">Business</Link></li>
+        <li className="nav-item"><Link className="nav-link" to="/entertainment">Entertainment</Link></li>
+        <li className="nav-item"><Link className="nav-link" to="/general">General</Link></li>
+        <li className="nav-item"><Link className="nav-link" to="/health">Health</Link></li>
+        <li className="nav-item"><Link className="nav-link" to="/science">Science</Link></li>
+        <li className="nav-item"><Link className="nav-link" to="/sprots">Sprots</Link></li>
+        <li className="nav-item"><Link className="nav-link" to="/technology">Technology</Link></li>
+       </ul>
+    </div>
+  </div>
+</nav>
+        
+      </div>
+    )
+  }
+}
+
+export default Navbar
+
+
+ // handlePrevClick = async () => {
+    //  console.log("prev");
+    //  let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=33a2fc22a5414a1a8aecaddc506d0b98&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`;
+    //  this.setState({loading:true})
+    //  let data =await fetch(url);
+    //  let parseData = await data.json()
+    //  console.log(parseData);
+    //    this.setState({
+    //    page:this.state.page - 1,
+    //    articles:parseData.articles,
+    //    loading:false
+    //  })
+    // this.setState({ page: this.state.page - 1 });
+    // this.updateNews();
+  // };
+  // handleNextClick = async () => {
+    //  console.log("next");
+    //  if(!(this.state.page + 1 > Math.ceil(this.state.totalResults/this.props.pageSize))){
+    //       let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=33a2fc22a5414a1a8aecaddc506d0b98&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`;
+    //       this.setState({loading:true})
+    //       let data =await fetch(url);
+    //       let parseData = await data.json()
+    //       this.setState({
+    //       page:this.state.page + 1,
+    //       articles:parseData.articles,
+    //       loading:false
+    //       })
+    //      }
+  //   this.setState({ page: this.state.page + 1 });
+  //   this.updateNews();
+  // };
+
+
+  // let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=33a2fc22a5414a1a8aecaddc506d0b98&pageSize=${this.props.pageSize}`;
+    // this.setState({loading:true})
+    // let data =await fetch(url);
+    // let parseData = await data.json()
+    // console.log(parseData);
+    // this.setState({
+    //   articles:parseData.articles,
+    //   totalResults:parseData.totalResults,
+    //   loading:false
+    // })
+
+
+    import React, { Component } from "react";
+      import Spinner from "./Spinner";
+      import NewsItems from "./NewsItems";
+      import PropTypes from "prop-types";
+      import InfiniteScroll from "react-infinite-scroll-component";
+      
+      export class News extends Component {
+        static defaultProps = {
+          country: "in",
+          pageSize: 8,
+          category: "general",
+        };
+        static propTypes = {
+          country: PropTypes.string,
+          pageSize: PropTypes.number,
+          category: PropTypes.string,
+        };
+      
+        capitalize = (str) => {
+          return str.charAt(0).toUpperCase() + str.slice(1);
+        };
+      
+        constructor(props) {
+          super(props);
+          this.state = {
+            articles: [],
+            loading: true,
+            page: 1,
+            totalResults:0
+          };
+          document.title = `${this.capitalize(this.props.category)}-NewsMonkey`;
+        }
+        async updateNews() {
+          const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=33a2fc22a5414a1a8aecaddc506d0b98&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+          this.setState({ loading: true });
+          let data = await fetch(url);
+          let parseData = await data.json();
+          console.log(parseData);
+          this.setState({
+            articles: parseData.articles,
+            totalResults: parseData.totalResults,
+            loading: false,
+            
+          })
+        }
+        async componentDidMount(){
+          this.updateNews();
+        }
+       
+        forceUpdate= async()=>{
+          this.setState({page:this.state.page+1})
+          const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=33a2fc22a5414a1a8aecaddc506d0b98&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+          this.setState({ loading: true });
+          let data = await fetch(url);
+          let parseData = await data.json();
+          console.log(parseData);
+          this.setState({
+            articles:this.state.articles.concat(parseData.articles),
+            totalResults: parseData.totalResults,
+            loading: false,
+            
+          })
+        };
+        render() {
+          return (
+            <>
+                <h1 className="text-center" style={{ margin: "35px 0px" }}>
+                  NewsMonkey - Top {this.capitalize(this.props.category)} Headlines
+                </h1>
+                {this.state.loading && <Spinner/>}
+                <InfiniteScroll
+                  dataLength={this.state.articles.length}
+                  next={this.fetchMoreData}
+                  hasMore={this.articles.length !==this.state.totalResults}
+                  loader={<Spinner/>}
+                >
+                  <div className="container">
+      
+                  </div>
+                  <div className="row">
+                    {this.state.articles.map((element) => {
+                        return (
+                          <div className="col-md-4" key={element.url}>
+                            <NewsItems
+                              title={element.title ? element.title: ""}
+                              description={
+                                element.description
+                                  ? element.description
+                                  : ""
+                              }
+                              imageUrl={element.urlToImage}
+                              newsUrl={element.url}
+                              author={element.author}
+                              date={element.publishedAt}
+                              source={element.source.name}
+                            />
+                          </div>
+                        )
+                      })}
+                  </div>
+                </InfiniteScroll>
+                </>
+               
+          )
+        }
+      }
+      
+      
+      export default News;
+      import './App.css';
+      import Navbar from './components/Navbar';
+      import React, { Component } from 'react';
+      import News from './components/News';
+      import {
+        BrowserRouter as Router,
+        Switch,
+        Route,
+      } from "react-router-dom";
+      export default class App extends Component {
+        pageSize=5;
+        render() {
+          return (
+            <Router>
+            <div>
+             <Navbar/>
+             <Switch>
+                <Route exact path="/"><News key="general" pageSize={this.pageSize} country="in" category="general"/></Route>
+                <Route exact path="/business"><News key="business" pageSize={this.pageSize} country="in" category="business"/></Route>
+                <Route exact path="/entertainment"><News key="entertainment" pageSize={this.pageSize} country="in" category="entertainment"/></Route>
+                <Route exact path="/general"><News key="general" pageSize={this.pageSize} country="in" category="general"/></Route>
+                <Route exact path="/health"><News key="health"  pageSize={this.pageSize} country="in" category="health"/></Route>
+                <Route exact path="/science"><News key="science" pageSize={this.pageSize} country="in" category="science"/></Route>
+                  <Route exact path="/sprots"><News key="sports" pageSize={this.pageSize} country="in" category="sports"/></Route>
+                <Route exact path="/technology"><News key="technology" pageSize={this.pageSize} country="in" category="technology"/></Route>
+          </Switch>
+            
+            </div>
+            </Router>
+          );
+        }
+      }
+     
+      
+
+      import React, { useEffect,useState } from 'react'
+import NewsItem from './NewsItems'
+import Spinner from './Spinner';
+import PropTypes from 'prop-types'
+import InfiniteScroll from "react-infinite-scroll-component";
+
+const News =(props)=>{
+    const [articles,setArticles] = useState([])
+    const [loading,setLoading] = useState(true)
+    const [page,setPage] = useState(1)
+    const [totalResults,setTotalResults]=useState(0)
+   // document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
+
+    const capitalizeFirstLetter = (string) => {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+    const  updateNews = async()=> {
+        props.setProgress(0);
+        const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
+        setLoading(true)
+        let data = await fetch(url);
+        props.setProgress(30);
+        let parsedData = await data.json()
+        props.setProgress(70);
+        setArticles(parsedData.articles)
+        setTotalResults(parsedData.totalResults)
+        setLoading(false)
+        props.setProgress(100);
+
+    }
+    useEffect(()=>{
+        updateNews(); 
+    },[])
+
+    const handlePrevClick = async () => {
+        setPage( page - 1 );
+        updateNews();
+    }
+
+    const handleNextClick = async () => {
+        setPage( page + 1);
+        updateNews()
+    }
+
+    const fetchMoreData = async () => {  
+        setPage(page + 1)
+        const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
+        let data = await fetch(url);
+        let parsedData = await data.json()
+        setArticles(articles.concat(parsedData.articles))
+        setTotalResults(parsedData.totalResults)
+      };
+        return (
+            <>
+                <h1 className="text-center" style={{ margin: '35px 0px' }}>NewsMonkey - Top {capitalizeFirstLetter(props.category)} Headlines</h1>
+                {loading && <Spinner />}
+                <InfiniteScroll
+                    dataLength={articles.length}
+                    next={fetchMoreData}
+                    hasMore={articles.length !== totalResults}
+                    loader={<Spinner/>}
+                > 
+                    <div className="container">
+                         
+                    <div className="row">
+                        {articles.map((element) => {
+                            return <div className="col-md-4" key={element.url}>
+                                <NewsItem title={element.title ? element.title : ""} description={element.description ? element.description : ""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source.name} />
+                            </div>
+                        })}
+                    </div>
+                    </div> 
+                </InfiniteScroll>
+
+            </>
+        )
+    }
+
+News.defaultProps = {
+    country: 'in',
+    pageSize: 8,
+    category: 'general',
+}
+
+News.propTypes = {
+    country: PropTypes.string,
+    pageSize: PropTypes.number,
+    category: PropTypes.string,
+}
+export default News
